@@ -1,0 +1,206 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  background-color: #333;
+  border: 4px solid #666;
+  background-image: linear-gradient(120deg, black,red);
+}
+#portfolio{
+  background-color: #333;
+}
+.p_he{
+  background-color: #1a0808;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.headerh1 {
+  color: wheat;
+  background-color: #24aaaa;
+  text-emphasis-color: white;
+  margin: 0;
+  font-size: 5.5rem;
+}
+
+/* PROJECTS */
+/* Main container for background */
+.div1 {
+  color: wheat;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-color: #000000;
+  background-image: url("nav2/abc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation-name: bacimg;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Heading styles */
+.Hum {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+/* Button group for alignment */
+.hopee{
+  background-color: #000000;
+  color: crimson;
+  font-size: 30px;
+}
+
+/* Animation for changing background images */
+@keyframes bacimg {
+  0% {
+      background-image: url("nav2/h10.jpg");
+      background-size: cover;
+  }
+  25% {
+      background-image: url("nav2/h1.jpg");
+      background-size: cover;
+  }
+  50% {
+      background-image: url("nav2/h2.jpg");
+      background-size: cover;
+  }
+  75% {
+      background-image: url("nav2/h4.jpg");
+      background-size: cover;
+  }
+  100% {
+      background-image: url("nav2/h3.jpg");
+      background-size: cover;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Hum {
+      font-size: 2rem;
+  }
+
+  .button-group {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Hum {
+      font-size: 1.5rem;
+  }
+
+  .input, .input_1 {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+  }
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Portfolio Section */
+#portfolio {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+#portfolio h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #4a90e2;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Project Card Styling */
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px; /* Set height as needed */
+  object-fit: contain; /* Ensures the entire image is visible without stretching */
+}
+
+.project-info {
+  padding: 1rem;
+}
+
+.project-info h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.project-info p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Hover Effect on Project Cards */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #4a90e2;
+  color: #fff;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Responsive Design for Larger Screens */
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* More space for larger screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for very large screens */
+  }
+}
