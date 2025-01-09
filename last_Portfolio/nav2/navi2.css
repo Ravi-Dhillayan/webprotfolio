@@ -1,0 +1,43 @@
+.div1{
+    /* background-size: auto; */
+   height: 700px;
+   background-color: #000000;
+   background-image: url(abc.JPG);
+   /* padding: px 300px 300px 900px; */
+   background-repeat: no-repeat;
+  background-size: 1400px;
+   transition-delay: 5se;
+   animation-name: bacimg;
+   animation-duration: 5s;
+   animation-delay: 1s;
+   animation-timing-function: ease-out;
+
+}
+@keyframes bacimg {
+   0%{
+      background-image: url("h10.jpg");
+      background-size: 300px;
+      background-position: center;
+   }
+   25%{
+      background-image: url("h1.jpg");
+      background-size: 400px;
+      background-position: center;
+   }
+   50%{
+      background-image: url("h2.jpg");
+      background-size: 600px;
+      background-position: center;
+   }
+   75%{
+      background-image: url("h4.jpg");
+      background-size: 1000px;
+      background-position: center;
+   }
+   100%{
+      background-image: url("h3.jpg");
+      background-size: 1000px;
+      background-position: center;
+   }
+
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navi2</title>
+    <script src="https://kit.fontawesome.com/50122dd40b.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="navi2.css"> -->
+     <style>
+        .div1{
+    /* background-size: auto; */
+    width: 1900px;
+   height: 700px;
+   background-color: #000000;
+   background-image: url(abc.JPG);
+   /* padding: px 300px 300px 900px; */
+   background-repeat: no-repeat;
+  background-size: 1400px;
+   transition-delay: 5se;
+   animation-name: bacimg;
+   animation-duration: 5s;
+   animation-delay: 1s;
+   animation-timing-function: ease-out;
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center; */
+   /* align-items: center; */
+   /* line-height: 50%; */
+
+}
+@keyframes bacimg{
+   0%{
+      background-image: url("h10.jpg");
+      background-size: 300px;
+      background-position: center;
+   }
+   25%{
+      background-image: url("h1.jpg");
+      background-size: 400px;
+      background-position: center;
+   }
+   50%{
+      background-image: url("h2.jpg");
+      background-size: 600px;
+      background-position: center;
+   }
+   75%{
+      background-image: url("h4.jpg");
+      background-size: 1000px;
+      background-position: center;
+   }
+   100%{
+      background-image: url("h3.jpg");
+      background-size: 1000px;
+      background-position: center;
+   }
+
+}
+.input{
+   background-color: yellow;
+    color: black;
+    /* padding-top: 10px; */
+    /* margin: -40px; */
+    height: 40px;
+    width: 100px
+    
+}
+.input:hover{background-color: white;
+  
+   color: black;}
+   /* input{
+      color: rgb(202, 173, 173);
+      background-color: black;
+   } */
+    .input_1{
+      height: 40px;
+      background-color: black;
+      color: aliceblue;
+    }
+.input_1:hover{  
+   
+   background-color: yellow; color: black;}
+
+   .Hum{
+   display: flex;
+   justify-content: flex-start;
+   /* margin-left: -320px; */
+   font-size: 120px;
+   color: bisque;
+
+}
+
+     </style>
+</head>
+<body>
+    <div class="div1">
+      <div><h1 class="Hum">Hope For <br>Humanity</h1>
+         <div style="float: left; margin-right: 20px;"><input  class="input" type="submit" value="GET STARTED"/></div>
+        <div> <input class="input_1" type="submit" value="DONATE NOW"/></div>
+       </div> 
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ABOUT SECTION ON CSS  */
+
+  
+  #about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    /* background: linear-gradient(135deg, red, silver); */
+
+    background-color: black;    
+    color: white;
+  }
+  /* About Section */
+  .about-section {
+            /* background-color: #1c1c1c; */
+            background: linear-gradient(736deg,yellow,green, blue, white,red, black);
+            color:black;
+            padding: 2px;
+            text-align: center;
+            height: 10%;
+        }
+
+        .about-content h2 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+  
+  .container {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+   
+  }
+  
+  .content {
+    flex: 1;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  .content p{
+    font-size: 20px;
+  }
+
+  
+  
+  .highlight {
+    color: #ffd700;
+    font-weight: bold;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #ffd700;
+    color: #333;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #e0c200;
+    transform: scale(1.1);
+  }
+  
+  .image-container {
+    flex: 1;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  #dynamicText {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: silver;
+  }  
+  /*  FOOTER */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(135deg, red, silver);
+    color: black;
+
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+}
+.footer-nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.footer-nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+.footer-nav a:hover {
+    color: #1fe55b;
+}
+
+.footer-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgba(255, 0, 0, 0.644);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #ff4500;
+}
+
+.footer-image img {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #000000;
+}
+
+.social-links a {
+    /* color: #fff; */
+    color: #000000;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #1fe55b;
+}
+
+.footer-bottom {
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
+@media (max-width: 1200px) {
+    .navy {
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+    .ani {
+        height: 25px;
+        width: 25px;
+    }
+    .hii {
+        width: 300px;
+        font-size: 24px;
+    }
+    button {
+        font-size: 24px;
+    }
+    .follow {
+        width: 300px;
+    }
+    .imga {
+        width: 100%;
+    }
+    .nav_cls {
+        height: 400px;
+    }
+    #section_3, #section_4 {
+        flex-direction: column;
+        height: auto;
+    }
+    .footer-content, .social-links, .footer-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navy {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hii {
+        width: 100%;
+        font-size: 20px;
+    }
+    .follow {
+        width: 250px;
+    }
+    .imga {
+        width: 90%;
+    }
+    .con_1, .con_2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .skills, .skill_1 {
+        height: 80px;
+        width: 80px;
+    }
+    .footer {
+        width: 100%;
+        padding: 10px;
+    }
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hii {
+        font-size: 18px;
+        text-align: center;
+    }
+    .input, .input_1, .button {
+        width: 80px;
+        font-size: 16px;
+    }
+    .footer-content, .footer-nav li {
+        text-align: center;
+    }
+    .footer-nav li {
+        display: block;
+        margin: 5px 0;
+    }
+    .footer-image img {
+        width: 50px;
+        height: 50px;
+    }
+    .pro_2 {
+        height: auto;
+        width: 90%;
+    }
+    .Hum {
+        font-size: 60px;
+        text-align: center;
+    }
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+}
+    </style>
+</head>
+<body>
+        <!-- ABOUT SECTION -->
+        <section id="Aabout" class="about-section">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <!-- <p>Hello! I'm Ravi Kumar, a passionate backend developer. I specialize in building scalable and efficient solutions, using technologies like Java, Spring, and Hibernate. My goal is to create impactful applications with seamless user experiences.</p> -->
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+              <div class="content">
+                <h1>About Me</h1>
+                <p>
+                  Hi, I'm <span class="highlight">Ravi Kumar</span>, a dedicated and passionate <span class="highlight">Full Stack Developer</span>. With a strong foundation in html, css, JavaScript, Java, C++, and problem-solving, I aim to create impactful solutions for modern challenges.
+                </p>
+                <p>
+                  My expertise includes <span class="highlight">Spring Boot, SQL</span>, and crafting scalable applications. I'm constantly learning and striving to deliver excellence in every project.
+                </p>
+              </div>
+              <div class="image-container">
+                <img src="PHOTOS/my.jpg" style="width: 200px; height: 200px;" alt="Ravi Kumar">
+              </div>
+            </div>
+            <div class="container">
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>I'm a passionate developer skilled in Java, C++, and more. I love solving problems and creating impactful software solutions.</p>
+                    <a href=" #contact" id="contactBtn"></a>
+                    <button class="btn" id="myButton" onclick="goToPage()">Get in Touch</button>
+                       
+                  <script>
+                        
+                        document.getElementById("myButton").onclick = function () {
+                            window.location.href = "contact.html";
+                        };
+                        </script>
+                </div>
+                
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <nav>
+                    <ul class="footer-nav">
+                        <li><a href="#section_1">Home</a></li>
+                        <li><a href="#section_4">About</a></li>
+                        <li><a href="#section_3">Skills</a></li>
+                        <li><a href="#section_5_0">Projects</a></li>
+                        <li><a href="#section_2">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-info">
+                    <h2>Hi, I'm Ravi Kumar</h2>
+                    <p><span style="color: rgba(255, 0, 0, 0.644);">BACKEND</span> DEVELOPER</p>
+                    <a href="http://127.0.0.1:5500/html/Ass/contact.html" class="contact-btn">Contact Me</a>
+                </div>
+
+                <div class="footer-image">
+                    <img src="PHOTOS/my.jpg" alt="Ravi Kumar's Profile Picture" height="100" width="100">
+                </div>
+
+                <div class="social-links">
+                    <a href="https://wa.me/8307365886" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="tel:+918307062117" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                    <a href="mailto:raviambersariya1@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/ravi-kumar-6223b5280" aria-label="LinkedIn"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Ravi-Dhillayan" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ravi Kumar. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <script>
+            // about
+// Smooth Scrolling Effect
+document.getElementById("contactBtn").addEventListener("click", function (e) {
+  e.preventDefault(); // Prevent default anchor behavior
+  document.querySelector("#contact").scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+// Dynamic Typing Effect for Introduction Text
+const typingText = "Hi, I'm Ravi Kumar, a Full stack Developer!";
+const textElement = document.createElement("p");
+textElement.setAttribute("id", "dynamicText");
+document.querySelector(".content").prepend(textElement);
+
+let index = 0;
+
+function typeEffect() {
+  if (index < typingText.length) {
+    textElement.textContent += typingText.charAt(index);
+    index++;
+    setTimeout(typeEffect, 100); // Adjust typing speed here
+  }
+}
+
+// Start the typing effect when the page loads
+window.addEventListener("load", typeEffect);
+        </script>
+        
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* Main container */
+.mainc {
+    border: 1px solid black;
+    width: 90%; 
+    max-width: 1300px; 
+    height: auto; 
+    margin: 0 auto; 
+    box-sizing: border-box; 
+}
+.div_1, .div_2 {
+    width: 48%; 
+    height: auto;
+    float: left; 
+    margin: 1%; 
+    box-sizing: border-box; 
+}
+.p_h {
+    margin: 20px 5%; 
+    float: left;
+    width: 90%; 
+}
+input[type="submit"], input[type="reset"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: wheat;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: wheat;
+    color: black;
+}
+.add {
+    margin: 10px 5%;
+    width: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(8, 3, 3);
+    width: 100%; 
+    height: 30px;
+    margin: 0 auto; 
+}
+.hope {
+    border: 1px solid black;
+    width: 45%; 
+    max-width: 200px;
+    height: auto; 
+    float: left;
+    margin: 10px;
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 200px;
+}
+
+.hope:hover {
+    color: yellow;
+}
+@media (max-width: 1024px) {
+    .div_1, .div_2 {
+        width: 48%; 
+    }
+
+    .hope {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .div_1, .div_2, .hope {
+        width: 100%; 
+        float: none;
+        margin: 10px auto;
+    }
+
+    .p_h, .add {
+        margin: 20px auto;
+        width: 95%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .mainc {
+        width: 100%; 
+    }
+
+    input[type="submit"], input[type="reset"] {
+        width: 100%; 
+        padding: 10px; 
+    }
+
+    .footer {
+        height: auto; 
+        text-align: center; 
+        padding: 10px;
+    }
+}
